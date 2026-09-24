@@ -1,6 +1,6 @@
 export type Project = {
   name: string
-  category: string
+  category: ProjectCategory
   description: string
   technologies: string[]
   features: string[]
@@ -10,10 +10,13 @@ export type Project = {
   demo: string
 }
 
+export const projectCategories = ['All', 'AI / NLP', 'Computer Vision', 'Data Analytics', 'Graph Analytics'] as const
+export type ProjectCategory = Exclude<(typeof projectCategories)[number], 'All'>
+
 export const projects: Project[] = [
   {
     name: 'LexClarity',
-    category: 'AI / NLP / LegalTech',
+    category: 'AI / NLP',
     description: 'An AI-powered legal document analysis platform designed to help users understand complex legal documents through intelligent summarization, retrieval-augmented question answering, and document analysis.',
     technologies: ['Python', 'NLP', 'RAG', 'ChromaDB', 'Embeddings', 'LLMs'],
     features: ['Document upload', 'PDF text extraction', 'OCR', 'Document preprocessing', 'Intelligent summarization', 'Semantic search', 'RAG-based question answering', 'Document chatbot'],
@@ -24,7 +27,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Port Operations Intelligence',
-    category: 'Data Analytics / Logistics',
+    category: 'Data Analytics',
     description: 'A data-driven platform for analyzing port operations and supporting smarter decisions around vessel movement, congestion, turnaround time, and demurrage.',
     technologies: ['Python', 'Data Analytics', 'Machine Learning', 'SQL', 'React', 'Node.js'],
     features: ['Port performance dashboard', 'Vessel analytics', 'Congestion analysis', 'Turnaround-time analysis', 'Demurrage estimation', 'Operational insights', 'Data visualization'],
@@ -35,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Criminal Network Analysis System',
-    category: 'AI / Graph Analytics / Investigation Support',
+    category: 'Graph Analytics',
     description: 'An investigation-support platform designed to analyze relationships between entities such as people, organizations, phone numbers, locations, and communication records.',
     technologies: ['Python', 'FastAPI', 'React', 'Graph Analytics', 'Machine Learning', 'Database Systems'],
     features: ['Entity relationship visualization', 'Network graph', 'Entity profiles', 'Relationship analysis', 'Investigation dashboard', 'Search and filtering', 'Network insights'],
@@ -46,7 +49,7 @@ export const projects: Project[] = [
   },
   {
     name: 'CONFIDENTIAL DOSSIER',
-    category: 'Python / Computer Vision / Face Recognition',
+    category: 'Computer Vision',
     description: 'A Python-based computer vision project that detects faces through a webcam, compares them against a known-face dataset using facial embeddings, identifies matching profiles, and displays associated dossier information through a custom interface.',
     technologies: ['Python', 'OpenCV', 'face_recognition', 'dlib', 'NumPy', 'JSON'],
     features: ['HOG face detection', '128-dimensional face embeddings', 'Face matching', 'Euclidean distance', 'Recognition threshold', 'Known-face dataset', 'JSON metadata', 'Real-time webcam processing'],
