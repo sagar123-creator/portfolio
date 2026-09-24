@@ -1,0 +1,32 @@
+SAGAR RATHOD
+Computer Engineering Student | AI/ML Enthusiast | Full-Stack Developer
+
+Vidyalankar Institute of Technology
+Mumbai, Maharashtra, India
+
+FOCUS AREAS
+Artificial Intelligence
+Machine Learning
+Computer Vision
+Full-Stack Development
+Data Analytics
+Software Engineering
+
+SKILLS
+C, C++, Java, Python, JavaScript, SQL
+React, Tailwind CSS, Vite
+Node.js, Express.js, REST APIs
+MySQL
+Machine Learning, NLP, RAG, Embeddings, Computer Vision, Face Recognition
+Git, GitHub, VS Code, Postman, Google Colab, Ollama
+
+SELECTED PROJECTS
+LexClarity - AI / NLP / LegalTech
+Port Operations Intelligence - Data Analytics / Logistics
+Criminal Network Analysis System - Investigation Support / Graph Analytics
+CONFIDENTIAL DOSSIER - Python / Computer Vision / Face Recognition
+
+CONTACT
+Email: sagar.rathod@example.com
+GitHub: https://github.com/
+LinkedIn: https://linkedin.com/
